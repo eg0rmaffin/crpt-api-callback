@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.app'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+}
+
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+    }
+}
